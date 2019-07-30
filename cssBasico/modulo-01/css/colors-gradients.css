@@ -1,0 +1,12 @@
+.quadrado {
+	width: 200px;
+	height: 200px;
+}
+
+#cores {
+	background-color: hsla(238, 84%, 33%, 0.8);
+}
+
+#cores2 {
+	background: radial-gradient(red, green)
+}

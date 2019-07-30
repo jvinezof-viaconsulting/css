@@ -1,0 +1,41 @@
+#exemplo {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	transition-property: width;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}
+
+#exemplo:hover {
+	width: 350px;
+	height: 350px;
+	background-color: green;
+}
+
+#exemplo2 {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	transition: width 2s linear 1s, height 2s linear;
+}
+
+#exemplo2:hover {
+	width: 350px;
+	height: 350px;
+	background-color: green;
+}
+
+#exemplo3 {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	transition: all 2s linear;
+}
+
+#exemplo3:hover {
+	width: 350px;
+	height: 350px;
+	background-color: green;
+}
+
