@@ -7,7 +7,7 @@
 	<link rel="icon" type="icon" href="img/fav.png">
 
 	<!-- Google Icon Font-->
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- MATERIALIZE CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 	<!-- CUSTOM CSS -->
@@ -15,15 +15,15 @@
 </head>
 <body>
 
-	<!-- NAVBAR -->
+	<!-- HEADER -->
 	<header>
 		<!-- MENU MOBILE -->
 		<ul class="side-nav" id="menu-mobile">
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Sobre</a></li>
-			<li><a href="#">Serviços</a></li>
-			<li><a href="#">Unidades</a></li>
-			<li><a href="#">Contato</a></li>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#sobre">Sobre</a></li>
+			<li><a href="#servicos">Serviços</a></li>
+			<li><a href="#unidades">Unidades</a></li>
+			<li><a href="#contatos">Contato</a></li>
 		</ul>
 
 		<div class="navbar-fixed">
@@ -35,11 +35,11 @@
 					</a>
 
 					<ul class="right light hide-on-med-and-down">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Sobre</a></li>
-						<li><a href="#">Serviços</a></li>
-						<li><a href="#">Unidades</a></li>
-						<li><a href="#">Contato</a></li>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#sobre">Sobre</a></li>
+						<li><a href="#servicos">Serviços</a></li>
+						<li><a href="#unidades">Unidades</a></li>
+						<li><a href="#contatos">Contato</a></li>
 					</ul>
 
 					<a href="#" data-activates="menu-mobile" class="button-collapse right"><i class="material-icons">menu</i></a>
@@ -49,7 +49,7 @@
 	</header>
 
 	<!-- HOME -->
-	<section class="home bloco">
+	<section class="home bloco scrollspy" id="home">
 		<div class="row container banner">
 			<div class="col s12 center">
 				<h2 class="white-text">O melhor treinamento funcional da região</h2>
@@ -63,9 +63,9 @@
 	</section>
 
 	<!-- SOBRE -->
-	<section class="sobre bloco">
+	<section class="sobre bloco scrollspy" id="sobre">
 		<div class="row container">
-			<div class="col s12">
+			<div class="col s12 center">
 				<h2 class="light">Sobre nós</h2>
 			</div>
 			<div class="col s12 l6">
@@ -86,9 +86,24 @@
 
 	<!-- JAVASCRIPT -->
 	<script type="text/javascript">
+		// INICIALIZAÇÃO
 		$(document).ready(function() {
 			// MENU MOBILE
 			$('.button-collapse').sideNav();
+
+			// LINK INTERNO
+			$(".scrollspy").scrollSpy({
+				scrollOffset: 0
+			});
+		});
+
+		// ADICIONANDO NAVCOLOR
+		$(window).on("scroll", function() {
+			if($(window).scrollTop() > 100) {
+				$(".navbar").addClass("nav-color");
+			} else {
+				$(".navbar").removeClass("nav-color");
+			}
 		});
 	</script>
 </body>
