@@ -27,6 +27,7 @@ html, body {
 /* MENU */
 .navbar {
 	background-color: transparent;
+	transition: background 0.5s linear;
 }
 
 .navbar ul a:hover {
@@ -78,6 +79,12 @@ html, body {
 	background-image: url('../img/textura1.png');
 }
 
+.sobre h2 {
+	font-size: 2rem;
+	color: #212121;
+	text-transform: uppercase;
+}
+
 .sobre h2::after {
 	content: '';
 	display: block;
@@ -86,15 +93,57 @@ html, body {
 	margin: 15px auto;
 }
 
-.sobre h2 {
-	font-size: 2rem;
-	color: #212121;
-	text-transform: uppercase;
-}
-
 .sobre p {
 	line-height: 1.8rem;
 	text-align: justify;
+}
+
+.sobre .missao-visao-valores {
+	padding: 20px 0;
+	margin-top: 35px;
+}
+
+.sobre .missao-visao-valores .icon {
+	color: #fff;
+}
+
+.sobre .missao-visao-valores h3 {
+	font-size: 1.5rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.sobre .missao-visao-valores p {
+	color: #fff;
+	text-align: center;
+}
+
+/* SERVIÇOS */
+.servicos {
+	background-image: url('../img/textura2.png');
+}
+
+.servicos h2 {
+	font-size: 2rem;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.servicos h2::after {
+	content: '';
+	display: block;
+	width: 100px;
+	border-top: 1px solid #2dc7d0;
+	margin: 15px auto;
+}
+
+.servicos p {
+	color: #fff;
+	line-height: 1.8rem;
+}
+
+.servicos .btn-horario {
+	padding-bottom: 20px;
 }
 
 /* CUSTOM */
@@ -128,6 +177,26 @@ nav i.material-icons {
 	font-weight: 100;
 }
 
+.row {
+	margin-bottom: 0;
+}
+
+.tabs {
+	background-color: #222;
+}
+
+.tabs .tab a {
+	color: #fff;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+	color: #2dc7d0;
+}
+
+.tabs .indicator {
+	background-color: #2dc7d0;
+}
+
 /* MEDIA */
 @media only screen and (max-width: 480px) {
 
@@ -142,6 +211,10 @@ nav i.material-icons {
 	.banner h2 {
 		font-size: 4rem;
 	}
+
+	.container {
+		width: 85%;
+	}
 }
 
 @media only screen and (min-width: 993px) {
@@ -151,5 +224,9 @@ nav i.material-icons {
 
 	.banner h2 {
 		font-size: 5rem;
+	}
+
+	.container {
+		width: 90%;
 	}
 }
