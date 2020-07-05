@@ -8,6 +8,10 @@ html, body {
 	padding-top: 94px;
 }
 
+.bloco-nofull {
+	min-height: 0 !important;
+}
+
 /* COLORS */
 .blue-logo {
 	background-color: #2dc7d0;
@@ -74,23 +78,27 @@ html, body {
 	}
 }
 
-/* SOBRE */
-.sobre {
-	background-image: url('../img/textura1.png');
-}
-
-.sobre h2 {
+/* TITULO E PARAGRAFO */
+.titulo {
 	font-size: 2rem;
-	color: #212121;
 	text-transform: uppercase;
 }
 
-.sobre h2::after {
+.titulo::after {
 	content: '';
 	display: block;
 	width: 100px;
 	border-top: 1px solid #2dc7d0;
 	margin: 15px auto;
+}
+
+.paragrafo {
+	line-height: 1.8rem;
+}
+
+/* SOBRE */
+.sobre {
+	background-image: url('../img/textura1.png');
 }
 
 .sobre p {
@@ -123,35 +131,57 @@ html, body {
 	background-image: url('../img/textura2.png');
 }
 
-.servicos h2 {
-	font-size: 2rem;
-	color: #fff;
-	text-transform: uppercase;
-}
-
-.servicos h2::after {
-	content: '';
-	display: block;
-	width: 100px;
-	border-top: 1px solid #2dc7d0;
-	margin: 15px auto;
-}
-
-.servicos p {
-	color: #fff;
-	line-height: 1.8rem;
-}
-
 .servicos .btn-horario {
 	padding-bottom: 20px;
 }
 
-/* CUSTOM */
-nav {
-	height: 94px;
-	line-height: 94px;
+/* UNIDADES */
+.unidades {
+	background-image: url('../img/bg-unidades.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;	
 }
 
+.unidades article p {
+	line-height: 1.8rem;
+}
+
+/* CONTATO */
+.contato {
+	background-image: url('../img/textura1.png');
+}
+
+.contato h4 {
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.contato .mapa {
+	min-height: 560px;
+}
+
+.contato .mapa iframe {
+	width: 100%;
+	min-height: 560px;
+	border: none;
+}
+
+.contato .informacoes {
+	background-image: url('../img/textura2.png');
+	min-height: 560px;
+	padding: 30px;
+}
+
+.contato .formulario {
+	min-height: 560px;
+	padding: 30px;
+}
+
+
+
+/* CUSTOM */
 nav.nav-extended .nav-wrapper {
 	min-height: 94px;
 }
@@ -161,9 +191,9 @@ nav.nav-extended .nav-wrapper {
 	height: 94px;
 }
 
-nav i,
+nav, nav i,
 nav [class^="mdi-"], nav [class*="mdi-"],
-nav i.material-icons {
+nav i.material-icons, nav a.button-collapse i {
 	height: 94px;
 	line-height: 94px;
 }
@@ -199,7 +229,9 @@ nav i.material-icons {
 
 /* MEDIA */
 @media only screen and (max-width: 480px) {
-
+	.card-image-horizontal {
+		display: none;
+	}
 }
 
 

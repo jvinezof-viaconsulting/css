@@ -8,8 +8,13 @@
 
 	<!-- Google Icon Font-->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- FONT AWESOME -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 	<!-- MATERIALIZE CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	
 	<!-- CUSTOM CSS -->
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 </head>
@@ -19,11 +24,11 @@
 	<header>
 		<!-- MENU MOBILE -->
 		<ul class="side-nav" id="menu-mobile">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#sobre">Sobre</a></li>
-			<li><a href="#servicos">Serviços</a></li>
-			<li><a href="#unidades">Unidades</a></li>
-			<li><a href="#contatos">Contato</a></li>
+			<li><a class="hide-menu" href="#home">Home</a></li>
+			<li><a class="hide-menu" href="#sobre">Sobre</a></li>
+			<li><a class="hide-menu" href="#servicos">Serviços</a></li>
+			<li><a class="hide-menu" href="#unidades">Unidades</a></li>
+			<li><a class="hide-menu" href="#contatos">Contato</a></li>
 		</ul>
 
 		<div class="navbar-fixed">
@@ -55,8 +60,8 @@
 				<h2 class="white-text">O melhor treinamento funcional da região</h2>
 				<p class="white-text light">Um novo conceito em prevenção, promoção e reabilitação da saúde para quem busca melhora do condicionamento e emagrecimento, além de ser divertido e desafiador. Quer experimentar?</p>
 				<div class="row">
-					<a href="#" class="btn btn-large blue-logo">Sobre nós</a>
-					<a href="#" class="btn btn-large white black-text">Contato</a>
+					<a href="#sobre" class="btn btn-large blue-logo">Sobre nós</a>
+					<a href="#contato" class="btn btn-large white black-text">Contato</a>
 				</div>
 			</div>
 		</div>
@@ -66,7 +71,7 @@
 	<section class="sobre bloco scrollspy" id="sobre">
 		<div class="row container">
 			<div class="col s12 center">
-				<h2 class="light">Sobre nós</h2>
+				<h2 class="light titulo">Sobre nós</h2>
 			</div>
 			<div class="col s12 l6">
 				<p class="light">
@@ -121,8 +126,8 @@
 	<section class="servicos bloco scrollspy" id="servicos">
 		<div class="row container">
 			<div class="col s12 center">
-				<h2 class="light">Serviços</h2>
-				<p class="light">instalações foram projetadas e equipadas sob medida, dentro dos padrões de acessibilidade, para acolher principalmente pessoas com limitações funcionais. A clínica dispõe de uma equipe profissional qualificada e com experiência no mercado, prezando sempre por tratamentos individualizados e baseados em evidências científicas.</p>
+				<h2 class="light titulo white-text">Serviços</h2>
+				<p class="light paragrafo white-text">Suas instalações foram projetadas e equipadas sob medida, dentro dos padrões de acessibilidade, para acolher principalmente pessoas com limitações funcionais. A clínica dispõe de uma equipe profissional qualificada e com experiência no mercado, prezando sempre por tratamentos individualizados e baseados em evidências científicas.</p>
 			</div>
 		</div>
 
@@ -527,6 +532,171 @@
 		</div>
 	</section>
 
+	<!-- UNIDADES -->
+	<section class="unidades bloco scrollspy" id="unidades">
+		<div class="row container">
+			<div class="col s12 center">
+				<h2 class="light titulo white-text">Unidades</h2>
+				<p class="light paragrafo white-text">Para oferecer serviços de acordo com a realidade e necessidade de cada região do Brasil, o centro boa forma possui unidades em quatro estados. Com atividades permanentes os espaços físicos buscam oferecer facilidade de acesso e atendimento de qualidade.</p>
+			</div>
+		</div>
+
+		<div class="row container">
+			<!-- BH -->
+			<article class="col s12 l6">
+				<div class="card horizontal">
+					<div class="card-image card-image-horizontal">
+						<img src="img/bh.jpg" alt="Belo Horizonte">
+					</div>
+
+					<div class="card-stacked">
+						<div class="card-content">
+							<h3 class="card-title light">Belo Horizonte</h3>
+							<p class="light">
+								<i class="material-icons left">phone</i> 123 321 123 <br>
+								<i class="material-icons left">email</i> bh@boaforma.com <br>
+								<i class="material-icons left">location_on</i> Av. Belo Horizonte, 123
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<!-- SALVADOR -->
+			<article class="col s12 l6">
+				<div class="card horizontal">
+					<div class="card-image card-image-horizontal">
+						<img src="img/salvador.jpg" alt="Salvador">
+					</div>
+
+					<div class="card-stacked">
+						<div class="card-content">
+							<h3 class="card-title light">Salvador</h3>
+							<p class="light">
+								<i class="material-icons left">phone</i> 123 321 123 <br>
+								<i class="material-icons left">email</i> salvador@boaforma.com <br>
+								<i class="material-icons left">location_on</i> Av. Bahia, 123
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<!-- SP -->
+			<article class="col s12 l6">
+				<div class="card horizontal">
+					<div class="card-image card-image-horizontal">
+						<img src="img/sp.jpg" alt="São Paulo">
+					</div>
+
+					<div class="card-stacked">
+						<div class="card-content">
+							<h3 class="card-title light">São Paulo</h3>
+							<p class="light">
+								<i class="material-icons left">phone</i> 123 321 123 <br>
+								<i class="material-icons left">email</i> sp@boaforma.com <br>
+								<i class="material-icons left">location_on</i> Av. São Paulo, 123
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<!-- RJ -->
+			<article class="col s12 l6">
+				<div class="card horizontal">
+					<div class="card-image card-image-horizontal">
+						<img src="img/rj.jpg" alt="Rio de Janeiro">
+					</div>
+
+					<div class="card-stacked">
+						<div class="card-content">
+							<h3 class="card-title light">Rio de Janeiro</h3>
+							<p class="light">
+								<i class="material-icons left">phone</i> 123 321 123 <br>
+								<i class="material-icons left">email</i> rj@boaforma.com <br>
+								<i class="material-icons left">location_on</i> Av. Ipanema, 123
+							</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	<!-- CONTATO -->
+	<section class="contato bloco scrollspy" id="contato">
+		<div class="row">
+			<div class="col s12 center">
+				<h2 class="titulo light black-text">Contato</h2>
+			</div>
+
+			<div class="col s12 m6 l4 ">
+				<div class="mapa transparent">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3319.924598306267!2d-35.02893975785532!3d-8.295041271298327!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7aaefe59a15ba99%3A0xa271ca12b05f901e!2sRua%20Eraldo%20Barros%20de%20Souza%20746!5e0!3m2!1spt-BR!2sbr!4v1570627212726!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				</div>
+			</div>
+
+			<div class="col s12 m6 l4">
+				<div class="informacoes white-text">
+					<h4>Redes Sociais</h4>
+					<p class="light">Fique por dentro das novidades, receba dicas, ou simplesmente mostre ao mundo que você faz parte desse projeto sensacional!</p>
+					<a href="#" class="btn-floating blue-logo"><i class="fa fa-facebook"></i>
+					</a>
+					<a href="#" class="btn-floating blue-logo"><i class="fa fa-google"></i>
+					</a>
+					<a href="#" class="btn-floating blue-logo"><i class="fa fa-twitter"></i>
+					</a>
+
+					<h4>Endereço</h4>
+					<p class="light">
+						Rua paraíso, 123 <br>
+						Centro, Itabuna - BA
+					</p>
+
+					<h4>Contatos</h4>
+					<p class="light">
+						(81) 123456987 <br>
+						(73) 123456789 <br>
+						(55) 234567678
+					</p>
+				</div>
+			</div>
+
+			<div class="col s12 m12 l4">
+				<div class="formulario white black-text">
+					<h4>Fale Conosco</h4>
+					<p class="light">Dúvidas, criticas ou sujestões? Entre em contato conosco, seu feedback é muito importante.</p>
+
+					<form action="#" method="post">
+						<div class="input-field">
+							<input type="text" name="name" id="name">
+							<label for="name">Seu nome</label>
+						</div>
+
+						<div class="input-field">
+							<input type="email" name="email" id="email">
+							<label for="email">Seu email</label>
+						</div>
+
+						<div class="input-field">
+							<input type="text" name="subject" id="subject">
+							<label for="subject">Assunto</label>
+						</div>
+
+						<div class="input-field">
+							<textarea class="materialize-textarea" id="message"></textarea>
+							<label for="message">Mensagem</label>
+						</div>
+
+						<button class="btn blue-logo" type="submit">Enviar</button>
+					</form>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
 	<!-- JQUERY 3.4.1 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
 	<!-- MATERIALIZE JS -->
@@ -554,6 +724,19 @@
 
 			// TABS
 			$("ul.tabs").tabs();
+
+			// ESCONDER MENU AO CLICAR
+			$(".hide-menu").click(function() {
+				$(".button-collapse").sideNav("hide");
+			});
+
+			// AUTOPLAY
+			function autoplay() {
+				$(".carousel").carousel("next");
+				setTimeout(autoplay, 4500);
+			}
+
+			autoplay();
 		});
 
 		// ADICIONANDO NAVCOLOR

@@ -1,0 +1,16 @@
+.navbar-item img {
+    width: auto;
+}
+
+.buttonstart {
+    margin-top: 1rem;
+}
+
+.cruz {
+    position: absolute !important;
+    top: 0 !important;
+    right: 30px !important;
+    width: auto;
+    max-height: 400px !important;
+    float: right;
+}
